@@ -1,8 +1,8 @@
-#### Eau Claire's Salon
-## By _Lindsay Warr_
+## Eau Claire's Salon
+#### By _Lindsay Warr_
 Week 10 Epicodus independent project: Build an MVC web application to help a salon owner manage their employees (stylists) and their clients.
 
-### Technologies Used
+## Technologies Used
 - C#
 - Entity Framework Core
 - MySQL Workbench
@@ -12,10 +12,10 @@ Week 10 Epicodus independent project: Build an MVC web application to help a sal
 - .NET6
 - Command Line
 
-### Description
+## Description
 The application allows a user to create, edit, and delete both clients and stylists. Clients are linked to a stylist using a one to many database relationship.
 
-### Setup Instructions
+## Setup Instructions
 1. Open your shell of choice (e.g., Terminal or GitBash) and run these commands: 
 2. Clone the project using
 `$ git clone https://github.com/user/Salon.Solution.git`
@@ -26,7 +26,7 @@ obj
 bin
 appsettings.json
 
-## Importing the MySQL Database:
+### Importing the MySQL Database:
 - Open MySQL Workbench, in the Navigator > Administration window, select Data Import/Restore.
 - In Import Options select Import from Self-Contained File.
 - Navigate to the sql file located in the root directory of this project called lindsay_warr.sql
@@ -48,7 +48,7 @@ appsettings.json
 }`
 9. Within the production directory (HairSalon), run `dotnet watch run`to start the application in development mode with a watcher.
 
-### Known Bugs
+## Known Bugs
 No known bugs as of 05/19/2023
 [MIT](https://opensource.org/license/mit/) License
 Copyright (c) 2023 Lindsay Warr
