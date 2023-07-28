@@ -50,6 +50,8 @@ appsettings.json
 
 ## Known Bugs
 No known bugs as of 05/19/2023
+
+## License
 [MIT](https://opensource.org/license/mit/) License
 Copyright (c) 2023 Lindsay Warr
 
