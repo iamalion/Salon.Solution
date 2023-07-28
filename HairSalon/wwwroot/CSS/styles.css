@@ -39,6 +39,15 @@ li {
     margin: 20px 10px;
 }
 
+.details-container {
+    display: flex;
+    justify-content: center;
+  }
+.details-container h3 {
+    display: inline-block;
+    margin: 20px 10px;
+}
+
 .btn {
     background-color: #F2F8F2;
     border-radius: 10px;
