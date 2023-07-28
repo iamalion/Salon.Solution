@@ -21,10 +21,12 @@ namespace HairSalon.Controllers
         List<Client> model = _db.Clients
                           .Include(client => client.Stylist)
                           .ToList();
+        ViewBag.PageTitle = "View All Clients";
         return View(model);
     }
     public ActionResult Create()
     {
+        ViewBag.PageTitle = "Create Client";
         ViewBag.StylistId = new SelectList(_db.Stylists, "StylistId", "Name");
         return View();
     }
@@ -46,11 +48,13 @@ namespace HairSalon.Controllers
         Client thisClient = _db.Clients
                             .Include(client => client.Stylist)
                             .FirstOrDefault(client => client.ClientId == id);
+        ViewBag.PageTitle = "Client Details";
         return View(thisClient);
     }
     public ActionResult Edit(int id)
     {
         Client thisClient = _db.Clients.FirstOrDefault(client => client.ClientId == id);
+        ViewBag.PageTitle = "Edit Client";
         ViewBag.StylistId = new SelectList(_db.Stylists, "StylistId", "Name");
         return View(thisClient);
     }
@@ -65,6 +69,7 @@ namespace HairSalon.Controllers
     public ActionResult Delete(int id)
     {
         Client thisClient = _db.Clients.FirstOrDefault(client => client.ClientId == id);
+        ViewBag.PageTitle = "Delete Client";
         return View(thisClient);
     }
 
