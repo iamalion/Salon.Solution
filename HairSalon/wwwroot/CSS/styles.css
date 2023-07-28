@@ -1,0 +1,25 @@
+body {
+    font-family: 'Borel', cursive;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container {
+    font-family: 'Borel', cursive;
+    text-align: center;
+}
+
+.link-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+.link-container p {
+    display: inline-block;
+    margin-right: 20px; 
+  }
+
+.center {
+    text-align: center;
+}
