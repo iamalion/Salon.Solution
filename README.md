@@ -49,7 +49,7 @@ appsettings.json
 9. Within the production directory (HairSalon), run `dotnet watch run`to start the application in development mode with a watcher.
 
 ## Known Bugs
-No known bugs as of 05/19/2023
+None
 
 ## License
 [MIT](https://opensource.org/license/mit/) License
