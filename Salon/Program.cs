@@ -23,7 +23,6 @@ namespace Salon
 
       WebApplication app = builder.Build();
 
-      // app.UseDeveloperExceptionPage();
       app.UseHttpsRedirection();
       app.UseStaticFiles();
 
