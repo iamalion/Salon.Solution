@@ -4,18 +4,25 @@
 
 @model HairSalon.Models.Stylist
 
-<h2>Edit</h2>
-
-<h4>Edit this Stylist: @Html.DisplayFor(model => model.Name)</h4>
+<div class="container">
+    <h1>Edit</h1>
+    <h4>Editing stylist: @Html.DisplayFor(model => model.Name)</h4>
+</div>
+<hr />
 
 @using (Html.BeginForm())
-{
-    @Html.HiddenFor(model => model.StylistId)
-
-    @Html.LabelFor(model => model.Name)
-    @Html.EditorFor(model => model.Name)
-
-    <input type="submit" value="Save" />
+{   <div class="form-container">
+        @Html.HiddenFor(model => model.StylistId)
+    <div>
+        @Html.LabelFor(model => model.Name)
+        @Html.EditorFor(model => model.Name)
+    </div>
+    </div>
+    <div class="center">
+        <input type="submit" value="Save" class="btn"/>
+    </div>
 }
-<p>Go to @Html.ActionLink("this page", "Create", "Stylist") to add a new client to this stylist.</p>
-<p>@Html.ActionLink("Back to list", "Index")</p>
+<div class="link-container">
+    <p>@Html.ActionLink("Delete Stylist", "Delete", new { id = Model.StylistId })</p>
+    <p>@Html.ActionLink("Back to list", "Index")</p>
+</div>

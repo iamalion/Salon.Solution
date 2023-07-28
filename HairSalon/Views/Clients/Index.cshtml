@@ -18,7 +18,8 @@
 </div>
 
 <div class="center">
-  <ul>All Clients
+  <ul>
+    <h3>All Clients</h3>
     @foreach(Client client in Model)
     {
       <li>@Html.ActionLink($"{client.Name}", "Details", new { id = client.ClientId })</li>

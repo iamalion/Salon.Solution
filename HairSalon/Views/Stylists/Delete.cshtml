@@ -3,11 +3,19 @@
 }
 
 @model HairSalon.Models.Stylist
+<div class="container">
+    <h1>Delete Stylist</h1>
+</div>
+<hr />
+<div class="center">
+<h2>Are you sure you want to delete @Html.DisplayFor(model => model.Name)? This action cannot be undone.</h2>
+</div>
 
-<h2>Are you sure you want to delete this stylist?</h2>
-@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)
 @using (Html.BeginForm())
-{
-    <input type="submit" value="Delete" />
+{ <div class="center">
+    <input type="submit" value="Delete" class="btn" />
+</div>
 }
-@Html.ActionLink("Back to List", "Index")
+<div class="link-container">
+    <p>@Html.ActionLink("Back to List", "Index")</p>
+</div>
